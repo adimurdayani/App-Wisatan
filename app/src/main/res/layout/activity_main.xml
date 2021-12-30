@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/judul"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/judul2"
+        android:layout_height="wrap_content"
+        android:text="SELAMAT DATANG"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/judul2"
+        android:layout_width="350dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/animationView4"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Pengenalan Obejk Wisata Kabupaten Kolaka Utara"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView4"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:lottie_autoPlay="true"
+        android:layout_centerInParent="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"/>
+
+    <TextView
+        android:layout_below="@id/animationView4"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
